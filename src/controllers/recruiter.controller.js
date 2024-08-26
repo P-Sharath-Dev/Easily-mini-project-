@@ -55,6 +55,8 @@ export default class RecrutierController{
                 //console.log(err);
             }
             else{
+                //delete cookie
+                res.clearCookie('lastVisit');
                 //destroyed session
                 return res.redirect("/login");
             }

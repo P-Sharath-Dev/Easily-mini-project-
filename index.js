@@ -73,7 +73,7 @@ app.get('/job/:id', jobsController.getJobDetails);
 app.post('/apply/:id', fileUpload.single('resume'), jobsController.applyForJob);
 
 //get login
-app.get('/login', recrutierController.getLogin);
+app.get('/login',recrutierController.getLogin);
 //post register 
 app.post('/register',recrutierController.postRegister);
 //post login form
